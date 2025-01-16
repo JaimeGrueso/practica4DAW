@@ -2,7 +2,7 @@
 
 ## 1. Instalacion de Servidor DNS
 Antes de comenzar la instalación del servidor DNS, debemso conectarnos por SSH a nuestra máquina física donde se ejecutarán los comandos necesarios para la instalación del servidor DNS. Para ello, utilizaremos el siguiente comando:
-![Comando 1](./assets/images/screenshot.24.jpg)
+![Comando 1](./assets/images/screenshot.1.jpg)
 
 Para instalar el servidor DNS en nuestra máquina, utilizaremos el siguiente comando:
 ![Comando 2](./assets/images/screenshot.2.jpg)
@@ -12,7 +12,7 @@ Para configurar el servidor DNS, debemos modificar el archivo `/etc/default/name
 ![Comando 3](./assets/images/screenshot.3.jpg)
 
 Ahora se comprobará el estado del archivo `/etc/bind/named.conf` para verificar que la configuración del servidor DNS es correcta:
-![Comando 4](./assets/images/screenshot.4.jpg)
+![Comando 4](./assets/images/screenshot..jpg)
 
 Esos tres archivos son los que se deben modificar para configurar el servidor DNS.
 
@@ -25,12 +25,12 @@ sudo cp /etc/bind/named.conf.options /etc/bind/named.conf.options.backup
 
 Ahora, modificaremos el archivo `/etc/bind/named.conf.options`. Primeramente, se debe añadir estas lineas al inicio del archivo:
 
-![Comando 5](./assets/images/screenshot.5.jpg)
+![Comando 5](./assets/images/screenshot.24.jpg)
 
 El tercer byte dependerá de la dirección IP de la máquina. En este caso, la dirección IP de la máquina es `192.168.1.59`, por lo que el tercer byte será `1`.
 
 Seguidamente, se deberán añadir unas lineas y el archivo deberá quedar de la siguiente manera:
-![Comando 6](./assets/images/screenshot.6.jpg)
+![Comando 6](./assets/images/screenshot.25.jpg)
 
 `allow-recursion {confiables;};`: Permite a los clientes hacer consultas recursivas.
 
