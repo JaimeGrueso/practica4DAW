@@ -2,7 +2,7 @@
 
 ## 1. Instalacion de Servidor DNS
 Antes de comenzar la instalación del servidor DNS, debemso conectarnos por SSH a nuestra máquina física donde se ejecutarán los comandos necesarios para la instalación del servidor DNS. Para ello, utilizaremos el siguiente comando:
-![Comando 1](./assets/images/screenshot.1.jpg)
+![Comando 1](./assets/images/screenshot.24.jpg)
 
 Para instalar el servidor DNS en nuestra máquina, utilizaremos el siguiente comando:
 ![Comando 2](./assets/images/screenshot.2.jpg)
